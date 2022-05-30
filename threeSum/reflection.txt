@@ -1,0 +1,16 @@
+https://leetcode.com/problems/3sum/
+My naive solution brute forced the answer by going over
+all possible combinations, but had trouble preventing duplicates resulting
+in lots of ugly additional logic, espicially to do with 0,0,0. I got
+it working correctly with in 45mins but the solution was n^4 and too slow to pass
+larger test cases.
+
+The n^2 solution was to go 1) sort the array, a big O n^2, but avg nlogn
+then 2) go through each element and 3) use pointer at each end to 
+make the sum of the 2 nums equal to the negative val of the original
+number with a high and low pointer, essentially solving a 2sum problem
+for each num. Since the array is sorted you can avoid duplicates by just checking
+that the next number isnt the same as the one you just checked, and skipping
+those until you find a new number to start from. This is used on lines 11,18 and 19 in the soln.
+
+The soln uses a common smaller problem, 2sum as a part of the larger 3sum problem, interesting.
