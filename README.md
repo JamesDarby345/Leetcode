@@ -1,2 +1,3 @@
 # Leetcode
-Documenting my leetcode solutions and reflections
+
+This Repository is to document my leetcode solutions and reflections.
